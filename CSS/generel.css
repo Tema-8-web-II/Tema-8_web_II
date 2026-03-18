@@ -1,0 +1,68 @@
+:root {
+  /* colors */
+  --the-background: #ece7dc; /* background */
+  --the-green: #a8a696;
+  --the-beige: #d7c6ae;
+  --the-brown: #776b5a;
+  --the-white: #f4efe8;
+  --the-black: #2f2f2f;
+
+  /* font */
+  --font: "Inter", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-style-italic: italic;
+
+  /* font size */
+  --h1-size: 2.25rem;
+  --h2-size: 1.25rem;
+  --h3-size: 1.5rem;
+  --h4-size: 1rem;
+  --h5-size: 0.75rem;
+  --p-size: 1rem;
+}
+
+html {
+  background-color: var(--the-background);
+  color: var(--the-black);
+  font-family: var(--font);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Libre Caslon Display", serif;
+  font-size: var(--h1-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--font-weight-regular);
+  font-style: var(--font-style-italic);
+  font-family: "Cardo", serif;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--font-weight-medium);
+  font-family: "Cardo", serif;
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: var(--font-weight-medium);
+}
+
+h5 {
+  font-size: var(--h5-size);
+  font-weight: var(--font-weight-regular);
+}
+
+p {
+  font-size: var(--p-size);
+  font-weight: var(--font-weight-regular);
+}
