@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Fashion Site</title>
+    <link rel="stylesheet" href="CSS/form.css" />
+  </head>
+  <body>
+    <h1>Kontakt og Feedback</h1>
+    <div id="contact-container">
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Navn" required />
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <textarea id="message" name="message" placeholder="Din besked om spørgsmål, feedback eller ønsker til stilistisk rådgivning..." required></textarea>
+        <button type="submit">Send besked</button>
+      </form>
+      <div id="form-success" style="display:none; color: #3d3327; text-align:center; margin-top: 20px;">Tak for din besked! Vi vender tilbage hurtigst muligt.</div>
+    </div>
+    <script src="JS/form.js"></script>
+  </body>
+</html>

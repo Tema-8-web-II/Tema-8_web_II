@@ -1,0 +1,81 @@
+body {
+  font-family: "Lora", "Arial", sans-serif;
+  background: #e8dac3;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 32px;
+  color: #3d3327;
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+}
+
+#contact-container {
+  max-width: 420px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 28px 16px 20px 16px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d2b48c;
+  font-size: 1em;
+  background: #f9f6f2;
+  color: #3d3327;
+}
+
+#contact-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+#contact-form button {
+  background: #e2be8a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+
+#contact-form button:hover {
+  background: #cfa96b;
+}
+
+#form-success {
+  font-size: 1.1em;
+  background: #f5e6d6;
+  border-radius: 8px;
+  padding: 12px 8px;
+  margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+  #contact-container {
+    max-width: 98vw;
+    padding: 18px 4vw 14px 4vw;
+  }
+  h1 {
+    font-size: 1.3rem;
+    margin-top: 18px;
+  }
+}
