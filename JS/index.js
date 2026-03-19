@@ -31,7 +31,6 @@ const categoryMap = {
     category: "accessories",
     image: "IMGS/accessories.webp",
     categories: [
-      "mobile-accessories",
       "sports-accessories",
       "sunglasses",
       "womens-bags",

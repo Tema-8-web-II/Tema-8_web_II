@@ -134,9 +134,10 @@ body {
   background: none;
 }
 
-.wishlist-btn svg {
+.wishlist-btn img {
   width: 45px;
-  height: 45px;
+  height: 35px;
+  transition: transform 0.18s ease;
 }
 
 .wishlist-btn:hover {
@@ -152,7 +153,7 @@ body {
 .price-new {
   font-size: 20px;
   font-weight: 700;
-  color: #b12b1f;
+  color: var(--the-red);
 }
 
 .price-regular {
@@ -179,7 +180,7 @@ body {
   display: grid;
   place-items: center;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #ba1c1c;
+  color: var(--the-red);
   font-style: italic;
   font-weight: 700;
   font-family: "Inter", sans-serif;

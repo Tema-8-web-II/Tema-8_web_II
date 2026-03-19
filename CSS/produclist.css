@@ -93,24 +93,6 @@ h1 {
   transform: translateY(-1px);
 }
 
-.sort-wrap {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-10%);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-}
-
-.sort-wrap select {
-  border: none;
-  background: transparent;
-  font: inherit;
-  cursor: pointer;
-}
-
 .product-grid {
   display: grid;
   width: min(1200px, 100%);
@@ -159,13 +141,6 @@ h1 {
   font-family: "Inter", sans-serif;
 }
 
-.product-card__title {
-  margin: 0 0 8px;
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Cardo", serif;
-}
-
 .product-card__name {
   grid-row: 1;
   margin: 0;
@@ -203,14 +178,14 @@ h1 {
 }
 
 .price-sale {
-  color: #ba1c1c;
+  color: var(--the-red);
 }
 
 .sale-badge {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #ba1c1c;
+  background: var(--the-red);
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -238,7 +213,7 @@ h1 {
   display: grid;
   place-items: center;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #ba1c1c;
+  color: var(--the-red);
   font-style: italic;
   font-weight: 700;
   font-family: "Inter", sans-serif;
@@ -247,20 +222,13 @@ h1 {
 @media (max-width: 900px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    width: min(1200px, 100%);
-  }
-
-  .sort-wrap {
-    position: static;
-    transform: none;
-    justify-content: center;
-    margin-top: 12px;
+    width: min(800px, 100%);
   }
 }
 
 @media (max-width: 600px) {
   .product-grid {
     grid-template-columns: 1fr;
-    width: min(1200px, 100%);
+    width: min(400px, 100%);
   }
 }
