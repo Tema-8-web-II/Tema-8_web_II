@@ -3,19 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Display&display=swap"
+      rel="stylesheet"
+    />
     <title>Form - Fashion Site</title>
     <link rel="stylesheet" href="CSS/form.css" />
   </head>
   <body>
+    <a class="back-link" href="index.html" aria-label="Go back to front page">
+      <span class="back-link__icon" aria-hidden="true">←</span>
+      <span>Go back</span>
+    </a>
     <h1>Kontakt og Feedback</h1>
     <div id="contact-container">
       <form id="contact-form">
         <input type="text" id="name" name="name" placeholder="Navn" required />
-        <input type="email" id="email" name="email" placeholder="Email" required />
-        <textarea id="message" name="message" placeholder="Din besked om spørgsmål, feedback eller ønsker til stilistisk rådgivning..." required></textarea>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Din besked om spørgsmål, feedback eller ønsker til stilistisk rådgivning..."
+          required
+        ></textarea>
         <button type="submit">Send besked</button>
       </form>
-      <div id="form-success" style="display:none; color: #3d3327; text-align:center; margin-top: 20px;">Tak for din besked! Vi vender tilbage hurtigst muligt.</div>
+      <div
+        id="form-success"
+        style="
+          display: none;
+          color: #3d3327;
+          text-align: center;
+          margin-top: 20px;
+        "
+      >
+        Tak for din besked! Vi vender tilbage hurtigst muligt.
+      </div>
     </div>
     <script src="JS/form.js"></script>
   </body>

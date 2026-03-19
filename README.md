@@ -97,9 +97,9 @@ Vi har navngivet vores filer, variabler og funktioner så de så tydeligt som mu
 ### Eksempler på variabler
 
 ```javascript
-const ProductContainer;
+const newPrice;
 const ProductId;
-const selectedCategory;
+const subcategoryNav;
 ```
 
 ### Eksempler på funktioner
@@ -108,30 +108,30 @@ const selectedCategory;
 fetchProducts();
 showProducts();
 showProductsDetails();
-validateForm();
 ```
 
-Vi har brugt camelCase i JavaScript, fordi det gør koden mere ensartet og lettere at læse.
+Vi har brugt categoryMap i JavaScript, for at identificere hovedkategorier og DummyJSON-subkategorier de indeholder
 
 ---
 
 ## Kommentarer i koden
 
 Vi har kommenteret de steder i koden, hvor det giver mening.
-Fx ved funktioner, fetch-kald og steder hvor der sker DOM-manipulation.
+Fx ved funktioner, categoryMap og steder hvor der sætter parameters .
 
 **Eksempel:**
 
 ```javascript
-// Henter produkter fra Rest API'et
-async function fetchProducts() {
-  const res = await fetch(apiURL);
-  const data = await res.json();
-  return data.products;
-}
+// samler alle produkter i ét array
+Promise.all(promises).then((results) => {
+  allData = results.flat(); // merges all product arrays into one array
+
+  udsnit = allData;
+  showProducts(allData);
+});
 ```
 
-Vi har prøvet ikke at skrive kommentarer til helt åbenlyse ting, men kun dér hvor det hjælper forståelsen.
+Vi har prøvet ikke at skrive kommentarer til helt åbenlyse ting, men kun dér hvor det hjælper forståelsen, de mere komplex og nye komponenter end det vi lært i klasse
 
 ---
 
@@ -172,13 +172,13 @@ Vi henter data fra et API i JSON-format.
 
 ## Formular og validering
 
-Vi har lavet en formular, hvor brugeren kan indtaste oplysninger.
+Vi har lavet en formular, hvor brugeren kan kontakte os og få feedback eller ønsker til stilistisk rådgivning.
 
 **HTML-validering:**
 
 - `required` – feltet skal udfyldes
 - `type="email"` – validerer email-format
-- `type="number"` – accepterer kun tal
+- `id="message"` – tekst input
 
 Det sikrer, at brugeren ikke kan sende formularen, hvis felterne ikke er udfyldt korrekt.
 
@@ -191,6 +191,8 @@ Vi har brugt GitHub til at samarbejde om projektet.
 Vi har arbejdet med branches, så vi ikke sad og ændrede i det samme på samme tid.
 
 Vi navngav branchene med feature først og navnet på den, der lavede branchen til sidst.
+
+Men vi have nogle problemer med permission tiladelse fra gruppe-medlemer så nogen kunne ikke push.
 
 ### Eksempler på branches
 
@@ -215,7 +217,7 @@ Det gjorde det nemmere at holde styr på, hvem der lavede hvad.
 
 **Tiltag:**
 
-- Optimerede billeder (formater)
+- Optimerede billeder ( WebP formater)
 - Ingen videoer
 - Ingen tunge frameworks
 - Genbruge af kode
