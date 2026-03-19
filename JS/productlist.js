@@ -17,7 +17,7 @@ const categoryMap = {
     "mens-watches",
   ],
 };
-
+// endpoint til at hente produkter baseret på kategori
 const params = new URLSearchParams(window.location.search);
 let category = params.get("category");
 const categoriesParam = params.get("categories");

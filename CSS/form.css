@@ -5,6 +5,26 @@ body {
   padding: 0;
 }
 
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0 0 24px;
+  color: #3d3327;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.back-link__icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
+
 h1 {
   text-align: center;
   margin-top: 32px;
@@ -70,6 +90,10 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .back-link {
+    margin: 18px 0 0 16px;
+  }
+
   #contact-container {
     max-width: 98vw;
     padding: 18px 4vw 14px 4vw;
