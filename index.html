@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="CSS/generel.css" />
     <link rel="stylesheet" href="CSS/index.css" />
+    <script src="JS/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +17,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="header__logo">
+      <a class="header__logo" href="index.html" aria-label="Gå til forsiden">
         <svg
           width="217"
           height="107"
@@ -47,13 +48,13 @@
             />
           </defs>
         </svg>
-      </div>
+      </a>
 
       <nav class="header__nav">
-        <a href="#">Women</a>
-        <a href="#">Men</a>
-        <a href="#">Selfcare</a>
-        <a href="#">Accessories</a>
+        <a href="productlist.html?category=women">Women</a>
+        <a href="productlist.html?category=men">Men</a>
+        <a href="productlist.html?category=self-care">Selfcare</a>
+        <a href="productlist.html?category=accessories">Accessories</a>
       </nav>
 
       <div class="header__icons">
@@ -170,6 +171,38 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <img
+          src="IMGS/hero-image.webp"
+          alt="Kvinde ved havet"
+          class="hero__image"
+        />
+
+        <div class="hero__overlay">
+          <h1 class="hero__title">
+            <span>Designed for the</span>
+            <span>Visionaries</span>
+          </h1>
+        </div>
+
+        <a
+          href="#categories"
+          class="hero__arrow"
+          aria-label="Gå til kategorier"
+        >
+          ↓
+        </a>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section class="categories" id="categories">
+        <h1 class="categories__title">Categories</h1>
+        <div class="categories__grid category_list_container"></div>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <div class="footer__content">
@@ -550,10 +583,10 @@
 
           <div class="footer__column">
             <h3>Shop</h3>
-            <a href="#">Women</a>
-            <a href="#">Men</a>
-            <a href="#">Selfcare</a>
-            <a href="#">Accessories</a>
+            <a href="productlist.html?category=women">Women</a>
+            <a href="productlist.html?category=men">Men</a>
+            <a href="productlist.html?category=self-care">Selfcare</a>
+            <a href="productlist.html?category=accessories">Accessories</a>
           </div>
 
           <div class="footer__column footer__newsletter">
