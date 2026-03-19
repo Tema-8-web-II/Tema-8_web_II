@@ -9,17 +9,18 @@ Vi har lavet et dynamisk website med HTML, CSS og JavaScript, hvor indholdet bli
 
 Sitet består af flere sider, hvor brugeren kan:
 
-- se en liste med indhold
+- forside
+- en liste med indhold og deres sub-categories
+- bruge filtrering og sortering
 - klikke sig videre til en detaljeside
-- bruge filtrering
 - udfylde en formular
 
 ## Links
 
 - GitHub repository: https://github.com/Tema-8-web-II/Tema-8_web_II.git
-- GitHub Pages: [indsæt link]
+- GitHub Pages: https://tema-8-web-ii.github.io/Tema-8_web_II/
 - Figma: https://www.figma.com/design/fEdfKseneO7Mqvb35T8YGQ/Tema-8-web-II?node-id=1-7&t=IptLvFVhAQRyijga-1
-- Trello: [indsæt link]
+- Trello: https://trello.com/b/iMJsRkpK/tema-8
 
 ---
 
@@ -34,22 +35,28 @@ project/
 ├── productdetails.html
 ├── form.html
 ├── css/
-│   └── style.css
+│   └── reset.css
+│   ├── generel.css
+│   ├── index.css
+│   ├── productlist.css
+│   ├── productdetails.css
+│   └── form.css
 ├── js/
 │   ├── index.js
 │   ├── productlist.js
 │   ├── productdetails.js
 │   └── form.js
+├── IMGS
 └── README.md
 ```
 
 ### Filbeskrivelser
 
 - **index.html** – forsiden
-- **productlist.html** – viser en liste med data fra API'et
-- **productdetails.html** – viser detaljer om en valgt opskrift
+- **productlist.html** – viser en liste og sub-categories med data fra API'et
+- **productdetails.html** – viser detaljer om en valgt produkt samt med ligende produkter
 - **form.html** – indeholder formularen
-- **style.css** – styrer designet
+- **generel.css** – styrer designet
 - **JavaScript-filer** – styrer det dynamiske indhold på de forskellige sider
 
 ---
@@ -65,7 +72,7 @@ Her bliver indhold vist dynamisk, fx links eller kategorier.
 
 ### productlist.js
 
-Henter data fra Rest API'et og viser en liste med produkter på siden.
+Henter data fra Rest API'et og viser en liste med produkter på siden og deres sub-kategorier
 
 **Flow:**
 
@@ -80,7 +87,7 @@ Henter data fra Rest API'et og viser en liste med produkter på siden.
 
 Bruges til detaljesiden. Den læser et id fra URL'en og henter derefter den rigtige opskrift fra Rest API'et.
 
-Det gør det muligt at genbruge den samme HTML-side til mange opskrifter. I stedet for at lave én side per opskrift, bruger vi ét id i URL'en til at vise det rigtige indhold.
+Det gør det muligt at genbruge den samme HTML-side til mange produkter. I stedet for at lave én side per produkt, bruger vi ét id i URL'en til at vise det rigtige indhold.
 
 ### form.js
 
@@ -196,10 +203,11 @@ Men vi have nogle problemer med permission tiladelse fra gruppe-medlemer så nog
 
 ### Eksempler på branches
 
-- `feature-forside-nicoai`
-- `feature-produktliste-frederik`
-- `feature-detaljeside-cecilie`
-- `feature-formular-louis`
+- - `index-Louis`
+- `Header-footer-Louis`
+- `produktliste-Nicolai`
+- `productdetails-Nicolai`
+- `formular-Frederik`
 
 ### Workflow
 
@@ -226,11 +234,12 @@ Det gjorde det nemmere at holde styr på, hvem der lavede hvad.
 
 ## Udfordringer undervejs
 
+- lave sub-categories
+- link breadcrumb til forrige sider
+
 **Løsninger:**
 
 - Console.logge data undervejs
--
--
 - Dele opgaverne mere tydeligt i gruppen
 
 ---
@@ -242,12 +251,13 @@ Hvis vi skulle arbejde videre med projektet, kunne vi forbedre det ved at tilfø
 - Søgefunktion
 - Error handling
 - Loading state
+- selv-valgt billedere
 
 ---
 
 ## Gruppemedlemmer
 
-- Cecilie
-- Louis
+- Cecilie Due Gregart
+- Louis Rasmussen
 - Nicolai Askholt
 - Frederik Askholt

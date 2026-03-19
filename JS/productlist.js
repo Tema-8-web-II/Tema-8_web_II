@@ -15,6 +15,7 @@ const categoryMap = {
     "womens-jewellery",
     "womens-watches",
     "mens-watches",
+    "sports-accessories",
   ],
 };
 // endpoint til at hente produkter baseret på kategori
