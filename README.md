@@ -52,11 +52,11 @@ project/
 
 ### Filbeskrivelser
 
-- **index.html** – forsiden
+- **index.html** – forsiden med vores 4 main kategorier
 - **productlist.html** – viser en liste og sub-categories med data fra API'et
 - **productdetails.html** – viser detaljer om en valgt produkt samt med ligende produkter
 - **form.html** – indeholder formularen
-- **generel.css** – styrer designet
+- **generel.css** – styrer designet -**css-filer** - styrer layout og stil
 - **JavaScript-filer** – styrer det dynamiske indhold på de forskellige sider
 
 ---
@@ -68,11 +68,11 @@ Vi har opdelt JavaScript, så hver side har sin egen fil.
 ### index.js
 
 Bruges på forsiden.
-Her bliver indhold vist dynamisk, fx links eller kategorier.
+Her bliver indhold vist dynamisk, fx links navigation og kategorier.
 
 ### productlist.js
 
-Henter data fra Rest API'et og viser en liste med produkter på siden og deres sub-kategorier
+Henter data fra Rest API'et og viser en liste med produkter på siden og deres sub-kategorier som kan filtreret og sorteret
 
 **Flow:**
 
@@ -87,7 +87,7 @@ Henter data fra Rest API'et og viser en liste med produkter på siden og deres s
 
 Bruges til detaljesiden. Den læser et id fra URL'en og henter derefter den rigtige opskrift fra Rest API'et.
 
-Det gør det muligt at genbruge den samme HTML-side til mange produkter. I stedet for at lave én side per produkt, bruger vi ét id i URL'en til at vise det rigtige indhold.
+Det gør det muligt at genbruge den samme HTML-side til mange produkter. I stedet for at lave én side per produkt, bruger vi ét id i URL'en til at vise det rigtige indhold med ens layout.
 
 ### form.js
 
@@ -107,6 +107,7 @@ Vi har navngivet vores filer, variabler og funktioner så de så tydeligt som mu
 const newPrice;
 const ProductId;
 const subcategoryNav;
+const soldOut;
 ```
 
 ### Eksempler på funktioner
@@ -115,16 +116,17 @@ const subcategoryNav;
 fetchProducts();
 showProducts();
 showProductsDetails();
+function getSimilarProducts
 ```
 
-Vi har brugt categoryMap i JavaScript, for at identificere hovedkategorier og DummyJSON-subkategorier de indeholder
+Vi har anvendt categoryMap i JavaScript til at identificere hovedkategorierne samt de tilhørende DummyJSON-subkategorier, som de består af.
 
 ---
 
 ## Kommentarer i koden
 
 Vi har kommenteret de steder i koden, hvor det giver mening.
-Fx ved funktioner, categoryMap og steder hvor der sætter parameters .
+Fx ved funktioner, categoryMap og steder hvor der sætter parameters.
 
 **Eksempel:**
 
@@ -138,13 +140,13 @@ Promise.all(promises).then((results) => {
 });
 ```
 
-Vi har prøvet ikke at skrive kommentarer til helt åbenlyse ting, men kun dér hvor det hjælper forståelsen, de mere komplex og nye komponenter end det vi lært i klasse
+Vi har prøvet ikke at skrive kommentarer til helt åbenlyse ting, men kun dér hvor det hjælper forståelsen, de mere komplex og nye komponenter end det vi har lært.
 
 ---
 
 ## Data og JSON-struktur
 
-Vi henter data fra et API i JSON-format.
+Vi henter data fra et API i JSON-format. Dataene indeholder information om produkter såsom titel, pris, kategori, beskrivelse og billeder. For at skabe overblik har vi organiseret dataene i en struktur, hvor hovedkategorier kobles sammen med relevante subkategorier ved hjælp af vores categoryMap. Dette gør det muligt at gruppere og vise produkterne logisk på hjemmesiden.
 
 **Et objekt kan fx se sådan ud:**
 
@@ -165,7 +167,7 @@ Vi henter data fra et API i JSON-format.
 
 ### Felter vi bruger
 
-- **id** – bruges til at sende brugeren videre til detaljesiden
+- **id** – Vi bruger id til at identificere hvert enkelt produkt unikt. Det gør det muligt at, hente specifikke produkter fra vores data
 - **title** – produktsnavn
 - **description** – beskrivelse af produktet
 - **category** – produktkategori (fx beauty,
@@ -187,7 +189,7 @@ Vi har lavet en formular, hvor brugeren kan kontakte os og få feedback eller ø
 - `type="email"` – validerer email-format
 - `id="message"` – tekst input
 
-Det sikrer, at brugeren ikke kan sende formularen, hvis felterne ikke er udfyldt korrekt.
+Det sikrer, at brugeren ikke kan sende formularen, hvis felterne ikke er udfyldt korrekt. Dette viser vores forbindelse og imødekommenhed over for vores brugere.
 
 ---
 
@@ -195,23 +197,23 @@ Det sikrer, at brugeren ikke kan sende formularen, hvis felterne ikke er udfyldt
 
 Vi har brugt GitHub til at samarbejde om projektet.
 
-Vi har arbejdet med branches, så vi ikke sad og ændrede i det samme på samme tid.
+Vi har arbejdet med branches, så vi ikke sad og ændrede i det samme på samme tid. Vi fordelte også arbejdet efter sidernes opdeling på hjemmesiden.
 
-Vi navngav branchene med feature først og navnet på den, der lavede branchen til sidst.
+Vi navngav branchene med siden eller featuren først og navnet på den, der lavede branchen til sidst.
 
-Men vi have nogle problemer med permission tiladelse fra gruppe-medlemer så nogen kunne ikke push.
+Vi oplevede dog problemer med GitHub-tilladelser, hvilket betød, at nogle gruppemedlemmer i starten ikke kunne pushe.
 
 ### Eksempler på branches
 
 - - `index-Cecilie`
-- `Header-footer-Louis`
+- `Header-footer-Nicolai`
 - `produktliste-Nicolai`
 - `productdetails-Nicolai`
 - `formular-Frederik`
 
 ### Workflow
 
-1. Lave en branch med feature-navn og eget navn til sidst
+1. Lave en branch med side-navn og eget navn til sidst
 2. Kode en feature
 3. Committe ændringer
 4. Pushe til GitHub
@@ -251,7 +253,8 @@ Hvis vi skulle arbejde videre med projektet, kunne vi forbedre det ved at tilfø
 - Søgefunktion
 - Error handling
 - Loading state
-- selv-valgt billedere
+- selv-valgt billedere til produkterne
+- JavaScript-organisering
 
 ---
 
