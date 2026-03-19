@@ -203,7 +203,7 @@ Men vi have nogle problemer med permission tiladelse fra gruppe-medlemer så nog
 
 ### Eksempler på branches
 
-- - `index-Louis`
+- - `index-Cecilie`
 - `Header-footer-Louis`
 - `produktliste-Nicolai`
 - `productdetails-Nicolai`
