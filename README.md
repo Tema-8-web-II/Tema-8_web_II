@@ -205,7 +205,7 @@ Vi oplevede dog problemer med GitHub-tilladelser, hvilket betød, at nogle grupp
 
 ### Eksempler på branches
 
-- - `index-Cecilie`
+- `index-Cecilie`
 - `Header-footer-Nicolai`
 - `produktliste-Nicolai`
 - `productdetails-Nicolai`
